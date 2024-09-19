@@ -28,14 +28,14 @@ print("\nVuelto:")
 
 for i in range(lb):
     
-    if n == 0 and i == 0:
+    if n == 0 and i == 0: #Evalua si en la primer iteracion el vuelto es cero
         print("       cero")
         break
-    elif n<d[i]:
+    elif n<d[i]: #Evalua si el vuelto es menor a la moneda guardada, de ser asi salta al siguiente valor
         continue
     else:
-        b[i] = n // d[i]
-        n = n %  d[i]  
+        b[i] = n // d[i] #Cuenta la cantidad de billetes, da el cociente sin decimales
+        n = n %  d[i]  #Pisa el valor del vuelto con el resto para la siguiente iteracion
         
         if b[i] == 1:
             print(f"       {b[i]} billete de ${d[i]}")
