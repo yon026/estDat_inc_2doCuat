@@ -47,11 +47,11 @@ Dia             Costo
 4               $ 5000
 5               $ 6250
 6               $ 7500
-
+"""
 
 
 dia = [1,2,3,4,5,6]
-cargasErroneas=0
+cargasErroneas=1
 edad = 0
 
 print("=============== Listado de aulas ===============")
@@ -65,14 +65,14 @@ for i in dia:
         print(i,"          ",aula)
 
 while edad <18:
-    if cargasErroneas == 0:
+    if cargasErroneas == 1:
         edad = int(input("Ingrese una edad mayor o igual a 18: "))    
     else:  
         edad = int(input("Error! Ingrese una edad mayor o igual a 18: "))
     cargasErroneas += 1
 
-print(f"La edad ingresada es: {edad}\nSe ha ingresado la edad erroneamente {cargasErroneas-1} veces")
-"""
+print(f"La edad ingresada es: {edad}\nSe ha ingresado la edad erroneamente {cargasErroneas-2} veces")
+
 curso=dict()
 costoDiaComedor = 1250
 
